@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Présentation.Accueil.Vue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E4E7ED"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="128dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tabSalles"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="Salles"
+                android:textColor="#16181E" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="128dp"
+            android:layout_height="1dp"
+            android:background="#9898ff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/btnFiltre"
+                android:layout_width="125px"
+                android:layout_height="125px"
+                android:background="#00FFFFFF"
+                android:scaleType="centerInside"
+                android:layout_marginTop="34px"
+                android:layout_marginLeft="34px"
+                android:layout_marginBottom="34px"
+                android:src="@drawable/filtre_removebg_preview"
+                android:contentDescription="Button to initiate action"/>
+
+            <ImageButton
+                android:id="@+id/btnVoirReservation"
+                android:layout_width="125px"
+                android:layout_height="125px"
+                android:layout_marginTop="34px"
+                android:layout_marginLeft="34px"
+                android:layout_marginBottom="34px"
+                android:background="#00FFFFFF"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon"
+                android:contentDescription="Button to initiate action"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtAucuneSalleDisponible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:text="Aucune salle n'est disponible. S'il vous plait, utilisé le filtre afin de trouvé une salle."
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+         >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/desSalles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:itemCount="1"
+                tools:listitem="@layout/liste_salles"
+                />
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/chargement"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        style="@android:style/Widget.ProgressBar.Large"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:indeterminate="true"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+
+
+</FrameLayout>

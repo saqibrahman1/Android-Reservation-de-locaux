@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="10dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?selectableItemBackground">
+
+    <RelativeLayout
+        android:id="@+id/uneSalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:id="@+id/imgSalle"
+            android:layout_width="match_parent"
+            android:layout_height="214dp"
+            android:src="@drawable/salle1" /> <!-- Replace with dynamic image reference -->
+
+        <TextView
+            android:id="@+id/nomSalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgSalle"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="Salle A1"
+            android:textColor="#16181E"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/nombrePersonnes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nomSalle"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:text="4 people"
+            android:textColor="#16181E"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/imgIconPersonnes"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignTop="@id/nombrePersonnes"
+            android:layout_toEndOf="@id/nombrePersonnes"
+            android:layout_marginLeft="4dp"
+            android:src="@drawable/image_removebg_preview" /> <!-- Replace with dynamic icon reference -->
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

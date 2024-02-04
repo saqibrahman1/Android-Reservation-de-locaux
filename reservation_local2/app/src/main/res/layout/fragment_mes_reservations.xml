@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Primary Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Your existing views here -->
+        <ImageView
+            android:id="@+id/btnRetour"
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            android:src="@drawable/retour" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reservationsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <!-- Floating ProgressBar -->
+    <ProgressBar
+        android:id="@+id/chargement"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        style="@android:style/Widget.ProgressBar.Large"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:indeterminate="true"
+        android:layout_gravity="center" />
+    <TextView
+        android:id="@+id/txtAucuneReservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:text="Aucune réservation. Veuillez revenir a l'accueil et utilisé le filtre afin de faire une réservation."
+        android:textSize="18sp"
+        android:visibility="invisible"
+        android:layout_gravity="center"/>
+
+</FrameLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Présentation.Presentation.Vue"
+    android:background="#E4E7ED">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/btnRetour"
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            android:src="@drawable/retour" />
+
+        <ImageView
+            android:id="@+id/imgSalle"
+            android:layout_width="match_parent"
+            android:layout_height="242dp"
+            android:src="@drawable/salle1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:id="@+id/nomSalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Salle 1"
+                android:textColor="#16181E"
+                android:textSize="18dp"
+                android:layout_marginRight="12dp"/>
+
+            <TextView
+                android:id="@+id/nombrePersonnes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4"
+                android:textColor="#16181E"
+                android:textSize="18dp"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/image_removebg_preview" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#16181E"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/txtSpace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#16181E"
+                android:text="•"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/txtHeureArrivee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#16181E"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/txtSpace1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#16181E"
+                android:text="•"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/txtHeureDepart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#16181E"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="18dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#16181E"
+                android:text="Équipement"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/txtEquipement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Linux"
+                android:textColor="#16181E"
+                android:textSize="18dp"
+                android:layout_marginTop="12dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnReservation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9898ff"
+            android:textColor="#E4E7ED"
+            android:text="Réserver"
+            android:layout_margin="12dp"/>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E7ED"
+    tools:context=".filtre">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="26dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Date"
+                android:textSize="24dp"
+                android:textColor="#16181E"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Choisir une date"
+                    android:background="#9898ff"
+                    android:textColor="#E4E7ED"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="#9898ff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtHeure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Heure"
+                android:textSize="24dp"
+                android:textColor="#16181E"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnHeureArrivee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Choisir une heure d'arrivée"
+                    android:background="#9898ff"
+                    android:textColor="#E4E7ED"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/btnHeureDepart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Choisir une heure de départ"
+                    android:background="#9898ff"
+                    android:textColor="#E4E7ED"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="#9898ff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNombreDePersonne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Nombre de place"
+                android:textSize="24dp"
+                android:textColor="#16181E"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="66dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    android:text="1"
+                    android:textColor="#E4E7ED"
+                    android:backgroundTint="@color/btn_couleur_selecteur"/>
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="66dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    android:text="2"
+                    android:textColor="#E4E7ED"
+                    android:backgroundTint="@color/btn_couleur_selecteur"/>
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="66dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    android:text="3"
+                    android:textColor="#E4E7ED"
+                    android:backgroundTint="@color/btn_couleur_selecteur"/>
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="66dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    android:text="4"
+                    android:textColor="#E4E7ED"
+                    android:backgroundTint="@color/btn_couleur_selecteur"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="#9898ff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtEquipement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Équipement"
+                android:textSize="24dp"
+                android:textColor="#16181E"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnWin"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+
+                    android:backgroundTint="@color/btn_couleur_selecteur"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    android:text="Windows"
+                    android:textColor="#E4E7ED" />
+
+                <Button
+                    android:id="@+id/btnLinux"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+
+                    android:backgroundTint="@color/btn_couleur_selecteur"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    android:text="Linux"
+                    android:textColor="#E4E7ED" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="#9898ff" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnFiltrer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filtrer"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="#9898ff"
+            android:textColor="#E4E7ED"
+            android:focusable="true"
+            android:clickable="true"
+            android:foreground="?selectableItemBackground"/>
+
+        <TextView
+            android:id="@+id/messageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="24dp"
+            android:textColor="#ffff0000"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/messageequipementTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="24dp"
+            android:textColor="#ffff0000"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/messagedate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="24dp"
+            android:textColor="#ffff0000"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
+

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/accueil">
+
+    <fragment
+        android:id="@+id/accueil"
+        android:name="com.example.reservation_local.Présentation.Accueil.Vue"
+        android:label="fragment_accueil"
+        tools:layout="@layout/fragment_accueil" >
+        <action
+            android:id="@+id/action_accueil_to_presentation"
+            app:destination="@id/presentation" />
+        <action
+            android:id="@+id/action_accueil_to_filtre"
+            app:destination="@id/filtre" />
+        <action
+            android:id="@+id/action_accueilFragment_to_reservationFragment"
+            app:destination="@id/reservationFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/presentation"
+        android:name="com.example.reservation_local.Présentation.Presentation.Vue"
+        android:label="fragment_presentation"
+        tools:layout="@layout/fragment_presentation" >
+        <action
+            android:id="@+id/action_presentation_to_accueil"
+            app:destination="@id/accueil" />
+        <action
+            android:id="@+id/action_presentation_to_date"
+            app:destination="@id/date" />
+        <action
+            android:id="@+id/action_presentation_to_heure"
+            app:destination="@id/heure" />
+        <action
+            android:id="@+id/action_presentation_to_confirmation"
+            app:destination="@id/confirmation" />
+        </fragment>
+
+
+    <fragment
+        android:id="@+id/date"
+        android:name="com.example.reservation_local.Présentation.Date.Vue"
+        android:label="fragment_date"
+        tools:layout="@layout/fragment_date" >
+        <action
+            android:id="@+id/action_date_to_presentation"
+            app:destination="@id/presentation" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/heure"
+        android:name="com.example.reservation_local.Présentation.Heure.Vue"
+        android:label="fragment_heure"
+        tools:layout="@layout/fragment_heure" >
+        <action
+            android:id="@+id/action_heure_to_presentation"
+            app:destination="@id/presentation" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/confirmation"
+        android:name="com.example.reservation_local.Présentation.Confirmation.Vue"
+        android:label="fragment_confirmation"
+        tools:layout="@layout/fragment_confirmation" >
+        <action
+            android:id="@+id/action_confirmation_to_accueil"
+            app:destination="@id/accueil" />
+        <action
+            android:id="@+id/action_confirmation_to_presentation"
+            app:destination="@id/presentation" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/reservationFragment"
+        android:name="com.example.reservation_local.Présentation.Reservation.Vue"
+        android:label="fragment_confirmation"
+        tools:layout="@layout/fragment_confirmation" >
+        <action
+            android:id="@+id/action_reservationFragment_to_accueilFragment"
+            app:destination="@+id/accueil" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/filtre"
+        android:name="com.example.reservation_local.Présentation.Filtre.Vue"
+        android:label="fragment_filtre"
+        tools:layout="@layout/fragment_filtre" >
+        <action
+            android:id="@+id/action_filtre_to_accueil"
+            app:destination="@id/accueil" />
+
+    </fragment>
+
+
+
+</navigation>
