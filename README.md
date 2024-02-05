@@ -11,11 +11,13 @@ Bienvenue dans le répertoire de l'application de réservation de local pour And
 - Confirmation rapide et sécurisée de la réservation.
 - Interface utilisateur intuitive adaptée aux appareils Android.
 
-## Contribution
+Bénéfices
+- Réserver des locaux a distance
+- Voir l'horaire des locaux en avance
+- Optimisation du temps
+- Amélioration de la planification à long terme
 
-Vos retours et contributions sont les bienvenus. Si vous avez des suggestions ou des corrections à apporter, n'hésitez pas à ouvrir une issue ou à soumettre une pull request.
+## Membres de l'équipe
 
-## Licence
-
-Walid Gharbi
+Saqib Rahman, Fahim Khan, Karl Augustin, Walid Gharbi.
 
